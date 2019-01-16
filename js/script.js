@@ -6,7 +6,6 @@ function screenSizeAndFs(fs) {
   for (let i = 0; i < shots.length; i++) {
 
     setTimeout(function() {
-
       $(shots[i]).animate({
         fontSize: fs
       }, a, "linear");
@@ -34,22 +33,17 @@ $('.wrapper').scroll(function() {
       screenSizeAndFs('75px');
     }
     if ($(document).width() > 1260 && $(document).width() < 1399) {
-
       screenSizeAndFs('65px');
     }
     if ($(document).width() > 768 && $(document).width() < 1260) {
-
       screenSizeAndFs('50px');
     }
     if ($(document).width() < 790) {
       console.log('yes');
       screenSizeAndFs('45px');
     }
-
     setTimeout(function() {
       $('.smoothly').addClass('lines smoothlyOn');
     }, 1600)
-
-
   }
 });
