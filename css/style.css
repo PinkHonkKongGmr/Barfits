@@ -11,12 +11,17 @@
   font-weight: normal;
   font-style: normal;
 }
+header
+{
+  height: 900px;
+}
 
 .wrapper {
   position: relative;
   overflow: hidden;
   overflow-y: scroll;
 }
+
 
 nav {
   margin: auto;
@@ -38,6 +43,7 @@ img {
   width: 100%;
   z-index: 100;
   bottom: -400px;
+
 }
 
 .wrapper::-webkit-scrollbar {
@@ -118,6 +124,7 @@ img {
   transition: .8s;
   opacity: 1;
   bottom: 150px;
+  position: relative;
 }
 
 .noScroll {
@@ -167,14 +174,27 @@ img {
   transform: scale(10, 10);
   transition: .3s;
 }
-.lines::before
-{
+
+.lines::before {
   position: absolute;
   content: '';
   width: 2px;
-  top:-35px;
+  top: -35px;
   height: 240%;
   transform: rotate(15deg);
   background: #282129;
-  right:-32px;
+  right: -32px;
+}
+
+@media screen and (max-width: 1280px) {
+  ul {
+    flex-direction: column;
+  }
+  nav,ul{
+    height:150px;
+  }
+  .menu li
+  {
+    height: 52px;
+  }
 }
