@@ -11,8 +11,8 @@
   font-weight: normal;
   font-style: normal;
 }
-header
-{
+
+header {
   height: 900px;
 }
 
@@ -21,7 +21,6 @@ header
   overflow: hidden;
   overflow-y: scroll;
 }
-
 
 nav {
   margin: auto;
@@ -43,7 +42,6 @@ img {
   width: 100%;
   z-index: 100;
   bottom: -400px;
-
 }
 
 .wrapper::-webkit-scrollbar {
@@ -104,16 +102,6 @@ img {
   height: 0;
   z-index: 1000;
 }
-
-.menu li::after {
-  position: absolute;
-  content: '';
-  height: 100%;
-  transform: rotate(35deg);
-  background: grey;
-  width: 3px;
-}
-
 .goUp {
   transition: .8s;
   opacity: 0.7;
@@ -186,15 +174,20 @@ img {
   right: -32px;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1080px) {
   ul {
     flex-direction: column;
   }
-  nav,ul{
-    height:150px;
+
+  nav, ul {
+    height: 150px;
   }
-  .menu li
-  {
+
+  .menu li {
     height: 52px;
+  }
+
+  .lines::before {
+    display: none;
   }
 }
