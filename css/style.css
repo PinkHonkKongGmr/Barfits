@@ -147,7 +147,7 @@ img {
   position: relative;
 }
 
-#disign a:hover, #safety a:hover, #price a:hover, #functional a:hover {
+ a:hover {
   transform: scale(1.2, 1.2);
   transition: .3s;
 }
