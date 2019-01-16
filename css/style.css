@@ -51,7 +51,7 @@ img {
 }
 
 .capture {
-  transform: matrix(8, 0, 0, 8, 0, 0);
+  transform: matrix(4, 0, 0, 8, 0, 0);
   transition: .6s;
 }
 

@@ -6,10 +6,14 @@ $('.wrapper').scroll(function() {
   console.log($('img').offset().top);
 
   if ($('img').offset().top == edge) {
-    $('img').addClass('capture');
+
+    $('img').animate({
+      width: 10000
+    }, 75, "linear");;
     $('.question').addClass('goUp');
     $('.menu').addClass('goUp2');
     $('.wrapper').addClass('noScroll');
+
     $('.question').animate({
       opacity: 0.8
     }, 200, "linear");
@@ -37,7 +41,7 @@ $('.wrapper').scroll(function() {
     }, 900)
 
     setTimeout(function() {
-      $('.smoothly').addClass('lines smoothlyOn');
+        $('.smoothly').addClass('lines smoothlyOn');
     }, 1600)
 
 
