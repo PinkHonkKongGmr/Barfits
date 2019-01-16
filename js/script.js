@@ -4,14 +4,16 @@ function screenSizeAndFs(fs) {
   let a = 200;
   b = 600;
   for (let i = 0; i < shots.length; i++) {
-
+console.log(b);
     setTimeout(function() {
       $(shots[i]).animate({
         fontSize: fs
       }, a, "linear");
+      console.log(a);
       a += 200;
-      b += 100;
-    }, b)
+    }, b
+  )
+    b += 100;
   }
 }
 
