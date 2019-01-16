@@ -1,3 +1,5 @@
+var smoothlys = document.querySelectorAll('.smoothly');
+
 $('.wrapper').scroll(function() {
   var edge = $('.wrapper').height() - $('img').height() + $('.wrapper').offset().top;
   console.log(edge);
@@ -9,7 +11,7 @@ $('.wrapper').scroll(function() {
     $('.question').addClass('goUp');
     $('.menu').addClass('goUp2');
     $('.wrapper').addClass('noScroll');
-
+$('.smoothly').addClass('lines');
     $('.question').animate({
       opacity: 0.8
     }, 200, "linear");
@@ -35,5 +37,13 @@ $('.wrapper').scroll(function() {
         fontSize: '75px'
       }, 800, "linear");
     }, 900)
+
+    setTimeout(function() {
+      for (var i = 0; i < smoothlys.length; i++) {
+        smoothlys[i].classList.add('smoothlyOn');
+      }
+    }, 1600)
+
+
   }
 });
