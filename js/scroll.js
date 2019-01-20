@@ -41,11 +41,7 @@ function screenSizeAndFs(fs) {
 }
 
 $('.wrapper_sunrise').scroll(function() {
-  var edge = $('.wrapper_sunrise').height() - $('.sunrise').height() + $('.wrapper_sunrise').offset().top;
-console.log(edge);
-console.log($('.sunrise').offset().top);
-  if ($('.sunrise').offset().top == edge) {
-
+  if ($('.wrapper_sunrise').scrollTop() > 300) {
     $('.sunrise').animate({
       width: '10000px'
     }, 75, "linear");
