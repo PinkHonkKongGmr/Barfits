@@ -41,16 +41,23 @@ a {
   position: absolute;
   width: 100%;
   z-index: 100;
-  bottom: -560px;
+  bottom: -580px;
 }
 
 .handle {
   position: absolute;
   z-index: 200;
-  bottom: -375px;
+  bottom: -370px;
   width: 100%;
 }
+.Scroll
+{
+  position: absolute;
+  z-index: 200;
+  bottom: -40px;
+  left:45%;
 
+}
 .moreHandle {
   transform: matrix(4,0,0,4,300,-450);
   transition: .9s;

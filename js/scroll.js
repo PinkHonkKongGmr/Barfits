@@ -28,7 +28,7 @@ function fontSizegenerator(arr) {
 
 function screenSizeAndFs(fs) {
   let a = 200,
-  b = 600;
+    b = 600;
   for (let i = 0; i < shots.length; i++) {
     setTimeout(function() {
       $(shots[i]).animate({
@@ -42,7 +42,8 @@ function screenSizeAndFs(fs) {
 
 $('.wrapper_sunrise').scroll(function() {
   var edge = $('.wrapper_sunrise').height() - $('.sunrise').height() + $('.wrapper_sunrise').offset().top;
-
+console.log(edge);
+console.log($('.sunrise').offset().top);
   if ($('.sunrise').offset().top == edge) {
 
     $('.sunrise').animate({
@@ -50,6 +51,7 @@ $('.wrapper_sunrise').scroll(function() {
     }, 75, "linear");
     $('.handle').addClass('moreHandle');
     $('.question').addClass('goUp');
+    $('.Scroll').addClass('void');
     $('.menu').addClass('goUp2');
     $(".wrapper_sunrise").animate({
       "scrollTop": 0
@@ -71,5 +73,5 @@ $('.wrapper_sunrise').scroll(function() {
 $('.menu li').click(function() {
   $('.sunrise,.question,header').addClass('void');
   $('.menu').addClass('');
-  $('.focus').css('display','block');
+  $('.focus').css('display', 'block');
 })
