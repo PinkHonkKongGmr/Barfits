@@ -1758,6 +1758,14 @@ footer .wrapper {
     width: 100%;
   }
 
+  .headerMain_item {
+    padding: 15px;
+  }
+
+  .headerBot {
+    padding: 15px;
+  }
+
   .mobMunu {
     display: flex;
     align-items: center;
@@ -1799,6 +1807,10 @@ footer .wrapper {
 @media screen and (max-width: 1360px)and (min-width: 768px) {
   .inshopPad {
     display: block;
+  }
+
+  .headerMain_item3 {
+    margin-right: 15px;
   }
 
   .wrapper {
@@ -1995,6 +2007,10 @@ footer .wrapper {
     line-height: 33px;
   }
 
+  .headerMain_item3 {
+    margin-left: 15px;
+  }
+
   .headerBot {
     flex-direction: column;
   }
@@ -2003,9 +2019,14 @@ footer .wrapper {
     flex-direction: column;
   }
 
+  .headerBot_item {
+    margin-bottom: 6px;
+  }
+
   .headerBot_item2, .headerBot_item3 {
     flex-direction: column;
     align-items: flex-start;
+    margin-bottom: 9px;
   }
 
   .handle {
