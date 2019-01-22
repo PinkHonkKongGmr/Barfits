@@ -1753,7 +1753,7 @@ footer .wrapper {
   display: none;
 }
 
-@media screen and (max-width: 1360px) {
+@media screen and (max-width: 769px) {
   .headerMain {
     width: 100%;
   }
@@ -1854,7 +1854,7 @@ footer .wrapper {
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
-    border-bottom: 1px dashed black;  
+    border-bottom: 1px dashed black;
   }
 
   .left {

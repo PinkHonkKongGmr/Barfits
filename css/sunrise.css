@@ -255,11 +255,23 @@ a:hover {
   }
 }
 
-
-
 @media screen and (max-width: 769px) {
   ul {
     flex-direction: column;
+  }
+
+  .sunrise {
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+    bottom: -301px;
+  }
+
+  .handle {
+    position: absolute;
+    z-index: 200;
+    bottom: -101px;
+    width: 100%;
   }
 
   .menu li {
@@ -276,12 +288,8 @@ a:hover {
 }
 
 @media screen and (max-width: 360px) {
-
-
   .question {
     font-size: 20px;
     line-height: 22px;
   }
-
-
 }
