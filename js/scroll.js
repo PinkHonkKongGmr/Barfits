@@ -42,6 +42,7 @@ function screenSizeAndFs(fs) {
 
 $('.wrapper_sunrise').scroll(function() {
   if ($('.wrapper_sunrise').scrollTop() > 300 && !$('.humburger').hasClass('on')) {
+    $('.headerBot_itemWithPop').css('z-index', '0');
     $('.sunrise').animate({
       width: '10000px'
     }, 75, "linear");
