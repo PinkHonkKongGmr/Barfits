@@ -1824,7 +1824,19 @@ footer .wrapper {
   .focus img {
     max-width: 100%;
   }
+  .takeaLook:nth-child(1) {
+    top: -13px;
+    left: 23%;
+    z-index: 5;
+    width: 123px;
+  }
 
+  .takeaLook:nth-child(2) {
+    top: -3px;
+    left: 29%;
+    z-index: 1;
+    width: 160px;
+  }
   .main_part1_item1 {
     max-width: 45%;
     box-sizing: border-box;
