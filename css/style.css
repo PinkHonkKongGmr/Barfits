@@ -1750,9 +1750,14 @@ footer .wrapper {
 }
 
 @media screen and (max-width: 1360px) {
+  .headerMain {
+    width: 100%;
+  }
+
   .mobMunu {
     display: flex;
-
+    align-items: center;
+    justify-content: space-between;
   }
 
   .headerHat {
@@ -1767,6 +1772,10 @@ footer .wrapper {
     display: flex;
     align-items: center;
     padding-left: 15px;
+  }
+
+  .right {
+    margin-right: 15px;
   }
 
   .logoTop {
@@ -1967,6 +1976,10 @@ footer .wrapper {
 @media screen and (max-width: 767px) {
   .focus {
     width: 100%;
+  }
+
+  .headerMain {
+    flex-direction: column;
   }
 
   .headerMain_item2 {

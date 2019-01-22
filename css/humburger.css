@@ -3,9 +3,8 @@
   flex-direction: column;
   width: 31px;
   height: 31px;
-  position: absolute;
+  position: relative;
   z-index: 50;
-
 }
 
 .humburger {
@@ -23,13 +22,13 @@
 .cross {
   transform: rotate(45deg);
   position: absolute;
-
+  bottom: 10px;
 }
 
 .cross2 {
   transform: rotate(-45deg);
   position: absolute;
-
+  bottom: 10px;
 }
 
 @media screen and (max-width: 768px) {
