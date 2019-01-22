@@ -252,7 +252,53 @@ header {
 
 .headerBot_item2, .headerBot_item3 {
   align-items: flex-end;
+  position: relative;
+  cursor: pointer;
 }
+.headerBot_itemWithPop
+{
+  z-index: 220;
+}
+.triangle{
+  position: absolute;
+  left:45%;
+  width: 19px;
+  height:19px;
+  border-top: 1px solid #e7e7e7;
+  border-left: 1px solid #e7e7e7;
+  background-color: #ffffff;;
+  transform: rotate(45deg);
+  top: 40px;
+  z-index: 500;
+}
+.popupHBI {
+  position: absolute;
+  bottom: -248px;
+  width: 275px;
+  height: 226px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.09);
+  background-color: #ffffff;
+  z-index: 250;
+  padding: 33px 21px;
+  box-sizing: border-box;
+}
+
+.popupHBI span {
+  opacity: 0.8;
+  color: #1c111e;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+  /* Text style for "Фокусировк" */
+  letter-spacing: 0.1px;
+  z-index: 250;
+  position: absolute;
+}
+
+
 
 .rangePrice {
   color: #000000;
