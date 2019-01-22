@@ -246,6 +246,10 @@ header {
   align-items: center;
 }
 
+.hbi23 {
+  display: flex;
+}
+
 .headerBot_item2, .headerBot_item3 {
   align-items: flex-end;
 }
@@ -1993,6 +1997,15 @@ footer .wrapper {
 
   .headerBot {
     flex-direction: column;
+  }
+
+  .hbi23 {
+    flex-direction: column;
+  }
+
+  .headerBot_item2, .headerBot_item3 {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .handle {
