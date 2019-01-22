@@ -1824,6 +1824,7 @@ footer .wrapper {
   .focus img {
     max-width: 100%;
   }
+
   .takeaLook:nth-child(1) {
     top: -13px;
     left: 23%;
@@ -1837,6 +1838,7 @@ footer .wrapper {
     z-index: 1;
     width: 160px;
   }
+
   .main_part1_item1 {
     max-width: 45%;
     box-sizing: border-box;
@@ -2473,6 +2475,10 @@ footer .wrapper {
 }
 
 @media screen and (max-width: 370px) {
+  .left {
+    flex-direction: column;
+  }
+
   .selection h3 {
     max-width: 100%;
     font-size: 40px;
