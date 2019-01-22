@@ -1770,6 +1770,61 @@ footer .wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
+    width: 100%;
+  }
+
+  .mobMunu_list {
+    width: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    right: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    top: 0;
+    z-index: 100;
+    padding: 30px 26px;
+  }
+
+  .mobMunu_list nav, .mobMunu_list ul, .mobMunu_list li {
+    margin: 0;
+    padding: 0;
+  }
+
+  .mobMunu_list li {
+    margin-bottom: 22px;
+  }
+
+  .mobMunu_list a {
+    color: #1c111e;
+    font-family: "PF Din Text Comp Pro - Medium Italic";
+    font-size: 39px;
+    font-weight: 500;
+    line-height: 59px;
+    text-transform: uppercase;
+  }
+
+  .mobNumb {
+    display: flex;
+    margin-bottom: 22px;
+    width: 245px;
+    height: 45px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.17);
+    border-radius: 27px;
+    background-color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    color: #333333;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 23px;
+    font-weight: 700;
+  }
+
+  .mobNumb .imgBox {
+    margin-right: 6px;
+    margin-bottom: 0;
   }
 
   .headerHat {
@@ -1778,6 +1833,28 @@ footer .wrapper {
 
   .headerBot {
     width: 100%;
+  }
+
+  .mobshop {
+    color: #333333;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21px;
+    margin-bottom: 22px;
+  }
+
+  .mobadressr {
+    margin-bottom: 22px;
+  }
+
+  .mobadressr span {
+    color: #333333;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    border-bottom: 1px dashed black;  
   }
 
   .left {

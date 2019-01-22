@@ -68,10 +68,12 @@ $('.wrapper_sunrise').scroll(function() {
 
 $('.menu li').click(function() {
   $('.sunrise,.question,.headerToHide').addClass('void');
-  $('.menu,nav,ul').addClass('static gadgetVoid');
-  $('ul').addClass('paddingTopCalibrator');
+  $('.menu,.sunRiseNav,.sunRiseUl').addClass('static gadgetVoid');
+  $('.sunRiseUl').addClass('paddingTopCalibrator');
   $('.focus').css('display', 'block');
   $('header').css('height', '150px');
+  $('.wrapper_sunrise').removeClass('noScroll');
+  $('.wrapper_sunrise').addClass('typicalScroll');
   $('.smoothly').removeClass('lines');
   $('.smoothly').addClass('newlines');
 })

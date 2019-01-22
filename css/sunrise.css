@@ -137,6 +137,9 @@ a {
 .noScroll {
   overflow: hidden;
 }
+.typicalScroll {
+  overflow: visible;
+}
 
 .fontSazeActivator {
   height: auto;
@@ -192,6 +195,7 @@ a:hover {
   background: #282129;
   right: -32px;
 }
+
 .newlines::before {
   opacity: 0.11;
   position: absolute;
@@ -203,6 +207,7 @@ a:hover {
   background: #1c111e;
   right: -32px;
 }
+
 .static {
   position: static;
   height: 180px;
@@ -223,19 +228,30 @@ a:hover {
 .static .shorter, .static .longer {
   width: auto;
 }
-@media screen and (max-width: 1360px) {
 
+.heightMagic {
+  height: 150px;
+}
+
+.hallowDarknessMyOldFriend {
+  box-shadow: 0 0 0 99999px rgba(0, 0, 0, 0.8);
+  z-index: 9000;
+  position: relative;
+}
+
+@media screen and (max-width: 1360px) {
   .gadgetVoid {
     display: none;
   }
+
+  .heightMagic {
+    height: 110vh;
+  }
 }
+
 @media screen and (max-width: 769px) {
   ul {
     flex-direction: column;
-  }
-
-  nav, ul {
-    height: 150px;
   }
 
   .menu li {
@@ -245,8 +261,8 @@ a:hover {
   .lines::before {
     display: none;
   }
-  .newlines::before
-  {
+
+  .newlines::before {
     display: none;
   }
 }

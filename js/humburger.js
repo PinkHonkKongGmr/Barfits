@@ -1,4 +1,5 @@
 var humburger = document.querySelectorAll('.humburger');
+var mobMunu = document.querySelector('.mobMunu')
 
 
 var line1 = document.querySelectorAll('.ln1');
@@ -16,5 +17,6 @@ for (let i = 0; i < humburger.length; i++) {
     line2[i].classList.toggle('void');
     line3[i].classList.toggle('cross2');
     tohide[i].classList.toggle('displayResolutionHide');
+    mobMunu.classList.toggle('hallowDarknessMyOldFriend');
   });
 }
