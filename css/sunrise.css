@@ -50,16 +50,16 @@ a {
   bottom: -370px;
   width: 100%;
 }
-.Scroll
-{
+
+.Scroll {
   position: absolute;
   z-index: 200;
   bottom: -40px;
-  left:45%;
-
+  left: 45%;
 }
+
 .moreHandle {
-  transform: matrix(4,0,0,4,300,-450);
+  transform: matrix(4, 0, 0, 4, 300, -450);
   transition: .9s;
 }
 
@@ -192,8 +192,44 @@ a:hover {
   background: #282129;
   right: -32px;
 }
+.newlines::before {
+  opacity: 0.11;
+  position: absolute;
+  content: '';
+  width: 2px;
+  top: 9px;
+  height: 60%;
+  transform: rotate(15deg);
+  background: #1c111e;
+  right: -32px;
+}
+.static {
+  position: static;
+  height: 180px;
+}
 
-@media screen and (max-width: 1080px) {
+.paddingTopCalibrator {
+  padding-top: 50px;
+}
+
+.static li {
+  color: #1c111e;
+  font-family: "PF Din Text Comp Pro - Medium Italic";
+  font-size: 39px !important;
+  font-weight: 500;
+  line-height: 59px;
+}
+
+.static .shorter, .static .longer {
+  width: auto;
+}
+@media screen and (max-width: 1360px) {
+
+  .gadgetVoid {
+    display: none;
+  }
+}
+@media screen and (max-width: 769px) {
   ul {
     flex-direction: column;
   }
@@ -207,6 +243,10 @@ a:hover {
   }
 
   .lines::before {
+    display: none;
+  }
+  .newlines::before
+  {
     display: none;
   }
 }

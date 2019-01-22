@@ -67,7 +67,11 @@ $('.wrapper_sunrise').scroll(function() {
 });
 
 $('.menu li').click(function() {
-  $('.sunrise,.question,header').addClass('void');
-  $('.menu').addClass('');
+  $('.sunrise,.question,.headerToHide').addClass('void');
+  $('.menu,nav,ul').addClass('static gadgetVoid');
+  $('ul').addClass('paddingTopCalibrator');
   $('.focus').css('display', 'block');
+  $('header').css('height', '150px');
+  $('.smoothly').removeClass('lines');
+  $('.smoothly').addClass('newlines');
 })
