@@ -1015,6 +1015,12 @@ input[type='radio'] {
   font-family: 'Roboto Black', arial;
   font-weight: 900;
 }
+.optionOrder2 {
+  top: 22%;
+  left: 19px;
+  font-family: 'Roboto Black', arial;
+  font-weight: 900;
+}
 
 .products {
   background-image: url(../img/shop.png);
