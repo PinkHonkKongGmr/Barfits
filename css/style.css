@@ -1950,7 +1950,7 @@ footer .wrapper {
     justify-content: space-around;
   }
 
-  .focus img {
+  .focus img:not(.butForm) {
     max-width: 100%;
   }
 
